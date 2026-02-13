@@ -1,34 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Valentine's Day</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>C, Bate, Will You Be My Valentine?</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
 </head>
 <body>
+<div class="images-border">
+<img src="676f1e14-a0d7-42bf-a3f7-1e059572b3c3.jpg" alt="Memory 1">
+<img src="IMG_0057.JPEG" alt="Memory 2">
+<img src="IMG_0400.JPEG" alt="Memory 3">
+<img src="IMG_0419.JPEG" alt="Memory 4">
+<img src="IMG_0835.JPEG" alt="Memory 5">
+<img src="IMG_1449.JPEG" alt="Memory 6">
+<img src="IMG_8375.JPG" alt="Memory 7">
+<img src="IMG_8597.JPEG" alt="Memory 8">
+<img src="IMG_8617.JPEG" alt="Memory 9">
+<img src="IMG_8621.JPEG" alt="Memory 10">
+<img src="IMG_8628.JPEG" alt="Memory 11">
+<img src="IMG_9298.JPEG" alt="Memory 12">
+<img src="IMG_9386.PNG" alt="Memory 13">
+<img src="IMG_9731.JPEG" alt="Memory 14">
+<img src="b06d7780-8061-47b1-bc7f-33269065724e.jpg" alt="Memory 15">
+<img src="c32ffa4e-2d76-4fa1-8fb1-7e53d2eb6315.jpg" alt="Memory 16">
+</div>
 
-<header>
-    <h1>Happy Valentine's Day!</h1>
-</header>
-
-<main>
-    <section>
-        <img src="image1.jpg" alt="Valentine's Day Image" class="bordered">
-        <img src="image2.jpg" alt="Valentine's Day Image" class="bordered">
-        <button class="cta-button" onclick="handleClick()">Click Me</button>
-    </section>
-</main>
-
-<footer>
-    <p>&copy; 2026 Valentine's Day Celebration</p>
-</footer>
+<div class="valentine-container">
+<h1>C, Bate, Will you be my Valentine?</h1>
+<div class="button-container">
+<button id="yesBtn" class="btn-yes">Yes</button>
+<button id="noBtn" class="btn-no">No</button>
+</div>
+<a href="reasons.html" id="whyBtn" class="valentine-button">Why I should be your Valentine</a>
+</div>
 
 <script>
-    function handleClick() {
-        alert('Button functionality improved!');
-    }
-</script>
+const yesBtn = document.getElementById('yesBtn');
+const noBtn = document.getElementById('noBtn');
 
+yesBtn.addEventListener('click', () => {
+  alert('Yay! hehe 💖 Finally you caved.. Love you, bate');
+});
+
+noBtn.addEventListener('mouseenter', () => {
+  const x = Math.random() * (window.innerWidth - noBtn.offsetWidth);
+  const y = Math.random() * (window.innerHeight - noBtn.offsetHeight);
+  noBtn.style.position = 'fixed';
+  noBtn.style.left = `${x}px`;
+  noBtn.style.top = `${y}px`;
+});
+</script>
 </body>
 </html>
