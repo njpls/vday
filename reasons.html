@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>100 Reasons to Be My Valentine</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<h1>100 Reasons You Should Be My Valentine</h1>
+<p><em>(Just in case you needed some convincing...)</em></p>
+
+<ol class="reasons-list">
+<li>I'll give you my last piece of chocolate.</li>
+<li>I’ll never skip an opportunity to make you laugh.</li>
+<li>I’m an expert cuddler, certified cozy!</li>
+<li>I make popcorn for movie nights and never hog it.</li>
+<li>Unlimited compliments included, always genuine.</li>
+<!-- You can add up to 100 reasons like these -->
+</ol>
+
+
+<p><strong>So... will you be my Valentine?</strong></p>
+<button id="yesBtn">Yes</button>
+<button id="noBtn">No</button>
+
+
+<script>
+document.getElementById('yesBtn').onclick = function () {
+alert("Yay! I knew it! 💖");
+};
+
+const noBtn = document.getElementById('noBtn');
+noBtn.addEventListener('mouseenter', () => {
+const x = Math.random() * (window.innerWidth - noBtn.offsetWidth);
+const y = Math.random() * (window.innerHeight - noBtn.offsetHeight);
+noBtn.style.position = 'absolute';
+noBtn.style.left = `${x}px`;
+noBtn.style.top = `${y}px`;
+});
+</script>
+</body>
+</html>
