@@ -1,6 +1,6 @@
 body {
 text-align: center;
-font-family: 'Comic Sans MS', cursive, sans-serif;
+font-family: 'Georgia', cursive, sans-serif;
 background-color: #fff0f5;
 margin: 0;
 padding: 0;
@@ -57,4 +57,5 @@ margin: 8px 0;
 
 p strong {
 font-size: 1.2em;
+
 }
